@@ -1,0 +1,6 @@
+select *from books;
+
+ insert into books(id,author,category,title,year,owner_id)
+  values(2, 'Joan Kathleen', 'fantasy','Harry Potter',2001,5),
+       (4,'Federico Moccia','drama','Three meters above the sky',2010,6),
+ 	  (3,'John Green','novel','the stars are to blame',2014,7);
