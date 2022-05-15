@@ -1,0 +1,149 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.w3.org/1999/xhtml">
+
+<!-- xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="layout/main.html">-->
+<head>
+  <meta charset="utf-8">
+  <link href="https://getbootstrap.com/docs/5.1/examples/headers/">
+  <link href="../css/style.css" rel="stylesheet">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <title>ASSYL JEWELLERY </title>
+  <style>
+  background-image: url(https://viland.ee/image/catalog/producs/366882/366882.jpg);
+</style>
+</head>
+<body>
+<nav id="menu">
+  <div class="container">
+    <div class="trigger">
+      <ul>
+        <li><a th:href="@{/login}">HOME</a></li>
+        <li><a th:href="@{/products}">NEW COLLECTION</a></li>
+        <li><a th:href="@{/products}">ABOUT US</a></li>
+        <li><a th:href="@{/products}">NEWS                                  </a></li>
+        <li><a th:href="@{/products}">           CARD</a></li>
+        <li><a th:href="@{/products}">ACCOUNT</a></li>
+        <li><a th:href="@{/logout}">LOGOUT</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!--<header layout:fragment="header"></header>-->
+
+<section class="quick-links">
+    <img class="image2" src="https://mir-s3-cdn-cf.behance.net/projects/max_808/2f085f54571709.Y3JvcCwxMDAyLDc4NCwwLDEwOA.jpg"></img>
+</section>
+
+
+<br>
+<br>
+
+<section class="quick-links">
+
+  <img class="image" src="https://i.pinimg.com/736x/3c/9e/45/3c9e458f0e210159a2033d3dbf7f2f66.jpg" ></img>
+  <img class="image" src="https://phonoteka.org/uploads/posts/2021-07/1625781803_21-phonoteka-org-p-kazakh-art-krasivo-22.jpg"></img>
+  <img class="image" src="https://i.pinimg.com/originals/a8/1a/49/a81a497e46f8451cb1da1314836dfb9b.jpg" ></img>
+
+
+  <br>
+  <br>
+  <br><br><br><br><br><br>
+
+  <h3> <br><br><br><br><br><br><br>National jewelry should be in the collection of every Kazakh woman.<br>
+    They enhance any style and are suitable for any event.</h3>
+
+
+</section>
+
+
+
+
+
+<section class="quick-links">
+  <article style="background-image: url(https://phonoteka.org/uploads/posts/2021-04/1619802445_22-phonoteka_org-p-nauriz-fon-dlya-slaida-27.jpg)">
+    <a class="table">
+      <div class="cell">
+        <div class="text">
+          <h4>affordable</h4>
+          <hr>
+          <h3>price</h3>
+        </div>
+      </div>
+    </a>
+  </article>
+  <article class="red" style="background-image: url(https://i.pinimg.com/736x/10/ae/ec/10aeec078ab6ee834da7ebe1062ca712--snorkel-horse-art.jpg)">
+    <a class="table">
+      <div class="cell">
+        <div class="text">
+          <h4>kazakh</h4>
+          <hr>
+          <h3>national </h3>
+          <hr>
+          <p>decorations</p>
+        </div>
+      </div>
+    </a>
+  </article>
+  <article style="background-image: url(https://phonoteka.org/uploads/posts/2021-04/1619802445_22-phonoteka_org-p-nauriz-fon-dlya-slaida-27.jpg)">
+    <a class="table">
+      <div class="cell">
+        <div class="text">
+          <h4>every week</h4>
+          <hr>
+          <h3>a new collection</h3>
+        </div>
+      </div>
+    </a>
+  </article>
+</section>
+<footer id  ="footer">
+  <div class="container">
+    <div class="cols">
+      <div class="col">
+        <h3>frequently asked questions</h3>
+        <ul>
+          <li><a href="#"> </a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"> </a></li>
+        </ul>
+      </div>
+      <div class="col media">
+        <h3>social network</h3>
+        <ul class="social">
+          <li><a href="https://instagram.com/asyljewelery?igshid=YmMyMTA2M2Y="><img src="https://img.icons8.com/color/344/instagram-new--v1.png" heigh="28px" width="24px"></img> Instagram</a></li>
+          <li><a href="https://wa.me/+77759812774"><img src="https://img.icons8.com/color/344/whatsapp--v1.png" heigh="28px" width="24px"></img> WhatsApp</a></li>
+          <li><a href="https://t.me/kaiyrkenovna"><img src="https://img.icons8.com/color/344/telegram-app--v1.png" heigh="28px" width="24px" ></img> Telegram</a></li>
+          <li><a href="#"><img src="https://img.icons8.com/color/344/facebook-new.png" heigh="28px" width="24px" ></img> Facebook</a></li>
+        </ul>
+      </div>
+      <div class="col contact">
+        <h3>kontaktıler</h3>
+        <p><img src="https://img.icons8.com/fluency/344/phone-office.png" heigh="28px" width="24px"></img> +775 981 27 74</p>
+        <p><a href="#"><img src="https://img.icons8.com/fluency/344/important-mail.png" heigh="28px" width="24px"></img> contact@asyljewelry.com</a></p>
+        <p>Asyl Jewellery INC.<br>Zhandosova 55,<br>Almaty-Kazakhstan</p>
+
+      </div>
+      <div class="col newsletter">
+        <h3>To get more information, subscribe to our newsletter</h3>
+        <form action="#">
+          <input type="text" placeholder="Your email address...">
+          <button type="submit"></button>
+        </form>
+      </div>
+    </div>
+    <p class="copy"> 2022 Asyl Jewelry. All rights reserved.</p>
+  </div>
+</footer>
+<!--<div th:insert="blocks/footer :: footer"></div>-->
+
+</body>
+</html>
+
+
+
+

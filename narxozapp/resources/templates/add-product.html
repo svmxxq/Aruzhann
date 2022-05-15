@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<nav id="menu">
+    <div class="container">
+        <div class="trigger">
+            <ul>
+                <li><a th:href="@{/login}">HOME</a></li>
+                <li><a th:href="@{/products}">NEW COLLECTION</a></li>
+                <li><a th:href="@{/products}">ABOUT US</a></li>
+                <li><a th:href="@{/products}">NEWS                                  </a></li>
+                <li><a th:href="@{/products}">           CARD</a></li>
+                <li><a th:href="@{/products}">ACCOUNT</a></li>
+                <li><a th:href="@{/logout}">LOGOUT</a></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--<header>th:insert="header :: header"</header>-->
+<div class="container">
+
+    <form method="POST" class="login-email" th:object="${productForm}" th:action="@{/addnewproduct}">
+        <h3 class="login-text">PRODUCTS</h3>
+
+        <label for="name">Name</label>
+        <input type="text" th:field="*{name}" id="name" placeholder="Name">
+        <!--        <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></span>-->
+
+        <label for="price">Price</label>
+        <input type="text" th:field="*{price}" id="price" placeholder="Price">
+        <!--    <span th:if="${#fields.hasErrors('surname')}" th:errors="*{surname}"></span>-->
+
+        <label for="image">Image</label>
+        <input type="text" th:field="*{image}" id="image" placeholder="Image">
+        <!--    <span th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></span>-->
+
+        <label for="category">Category</label>
+        <input type="text" th:field="*{category}" id="category" placeholder="Category">
+
+        <div class="input-group">
+            <button class="btn" type="submit">Submit</button>
+        </div>
+
+    </form>
+
+</div>
+<!--<form action="#" th:action="@{/addproduct}" th:object="${product}" method="post">-->
+
+<!--    <label for="name">Name</label>-->
+<!--    <input type="text" th:field="*{name}" id="name" placeholder="Name">-->
+<!--    <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></span>-->
+
+<!--    <label for="price">Price</label>-->
+<!--    <input type="text" th:field="*{price}" id="price" placeholder="Price">-->
+<!--&lt;!&ndash;    <span th:if="${#fields.hasErrors('surname')}" th:errors="*{surname}"></span>&ndash;&gt;-->
+
+<!--    <label for="image">Image</label>-->
+<!--    <input type="text" th:field="*{image}" id="image" placeholder="Image">-->
+<!--&lt;!&ndash;    <span th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></span>&ndash;&gt;-->
+
+<!--    <label for="category_id">Category id</label>-->
+<!--    <input type="text" th:field="*{category_id}" id="category_id" placeholder="Category_id">-->
+
+<!--    <input type="submit" value="Add Product">-->
+
+</form>
+<footer id  ="footer">
+    <div class="container">
+        <div class="cols">
+            <div class="col">
+                <h3>frequently asked questions</h3>
+                <ul>
+                    <li><a href="#"> </a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"> </a></li>
+                </ul>
+            </div>
+            <div class="col media">
+                <h3>social network</h3>
+                <ul class="social">
+                    <li><a href="https://instagram.com/asyljewelery?igshid=YmMyMTA2M2Y="><img src="https://img.icons8.com/color/344/instagram-new--v1.png" heigh="28px" width="24px"></img> Instagram</a></li>
+                    <li><a href="https://wa.me/+77759812774"><img src="https://img.icons8.com/color/344/whatsapp--v1.png" heigh="28px" width="24px"></img> WhatsApp</a></li>
+                    <li><a href="https://t.me/kaiyrkenovna"><img src="https://img.icons8.com/color/344/telegram-app--v1.png" heigh="28px" width="24px" ></img> Telegram</a></li>
+                    <li><a href="#"><img src="https://img.icons8.com/color/344/facebook-new.png" heigh="28px" width="24px" ></img> Facebook</a></li>
+                </ul>
+            </div>
+            <div class="col contact">
+                <h3>kontaktıler</h3>
+                <p><img src="https://img.icons8.com/fluency/344/phone-office.png" heigh="28px" width="24px"></img> +775 981 27 74</p>
+                <p><a href="#"><img src="https://img.icons8.com/fluency/344/important-mail.png" heigh="28px" width="24px"></img> contact@asyljewelry.com</a></p>
+                <p>Asyl Jewellery INC.<br>Zhandosova 55,<br>Almaty-Kazakhstan</p>
+
+            </div>
+            <div class="col newsletter">
+                <h3>To get more information, subscribe to our newsletter</h3>
+                <form action="#">
+                    <input type="text" placeholder="Your email address...">
+                    <button type="submit"  class="btn"></button>
+                </form>
+            </div>
+        </div>
+        <p class="copy"> 2022 Asyl Jewelry. All rights reserved.</p>
+    </div>
+</footer>
+<!--<div>th:insert="footer :: footer"</div>-->
+</body>
+</html>
